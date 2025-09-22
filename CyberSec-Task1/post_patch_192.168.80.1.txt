@@ -1,0 +1,13 @@
+# Nmap 7.95 scan initiated Mon Sep 22 10:04:59 2025 as: /usr/lib/nmap/nmap -sS -p 135,139,445,2869,7070 -oN post_patch_192.168.80.1.txt 192.168.80.1
+Nmap scan report for 192.168.80.1
+Host is up (0.00079s latency).
+
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+2869/tcp open  icslap
+7070/tcp open  realserver
+MAC Address: 00:50:56:C0:00:08 (VMware)
+
+# Nmap done at Mon Sep 22 10:05:00 2025 -- 1 IP address (1 host up) scanned in 0.26 seconds

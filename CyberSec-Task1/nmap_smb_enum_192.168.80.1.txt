@@ -1,0 +1,10 @@
+# Nmap 7.95 scan initiated Mon Sep 22 10:03:02 2025 as: /usr/lib/nmap/nmap --script smb-enum-shares,smb-os-discovery,smb-security-mode -p 139,445 -oN nmap_smb_enum_192.168.80.1.txt 192.168.80.1
+Nmap scan report for 192.168.80.1
+Host is up (0.00046s latency).
+
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+MAC Address: 00:50:56:C0:00:08 (VMware)
+
+# Nmap done at Mon Sep 22 10:03:02 2025 -- 1 IP address (1 host up) scanned in 0.35 seconds

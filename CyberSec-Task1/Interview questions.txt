@@ -1,0 +1,31 @@
+What is an open port?
+An open port is a network port on a computer or device that is actively listening and ready to accept incoming connections. Open ports allow communication with specific services, such as web servers on port 80 or SSH on port 22.
+
+How does Nmap perform a TCP SYN scan?
+Nmap’s TCP SYN scan, also called a “half-open” scan, sends a SYN (synchronize) packet to a target port. If the port responds with a SYN-ACK, it is open. If it responds with RST (reset), it is closed. This method is fast and stealthy because it does not complete the full TCP handshake.
+
+What risks are associated with open ports?
+Open ports can be exploited by attackers to gain unauthorized access, install malware, steal sensitive data, or launch attacks. Unsecured ports are often the entry point for hackers.
+
+Explain the difference between TCP and UDP scanning.
+TCP scanning checks connection-oriented ports by attempting a TCP handshake, making it reliable and accurate. UDP scanning checks connectionless ports without a handshake, making it slower and harder to detect but less reliable due to packet loss and lack of response.
+
+How can open ports be secured?
+Open ports can be secured by:
+
+Closing unused ports.
+
+Using firewalls to restrict access.
+
+Keeping software up to date.
+
+Limiting connections to trusted IPs.
+
+What is a firewall's role regarding ports?
+A firewall monitors and controls incoming and outgoing network traffic. It allows or blocks traffic to specific ports based on security rules, protecting systems from unauthorized access.
+
+What is a port scan and why do attackers perform it?
+A port scan is a technique used to send requests to multiple ports to identify which are open, closed, or filtered. Attackers perform port scans to find vulnerabilities and entry points into a system.
+
+How does Wireshark complement port scanning?
+Wireshark captures and analyzes network traffic in real time. It helps verify which ports are actually active, what data is being transmitted, and can detect suspicious activity that a port scan alone might not reveal.

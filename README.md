@@ -6,25 +6,32 @@
 <img src="https://img.shields.io/badge/status-Complete-success" alt="status" />
 </p>
 
-Deliverables from my cybersecurity internship with **Elevate Labs**. Three guided tasks covering reconnaissance, vulnerability assessment, and system hardening - each with a written report and supporting evidence.
+Deliverables from my cybersecurity internship with **Elevate Labs** — three guided tasks,
+each with a written report and whatever evidence the task produced.
 
 ## Tasks
 
-| # | Topic | Folder |
-|---|---|---|
-| 1 | Reconnaissance and footprinting | [`CyberSec-Task1/`](CyberSec-Task1) |
-| 2 | Vulnerability assessment | [`Cybersec Task 2/`](Cybersec%20Task%202) |
-| 3 | System hardening | [`Cybersec Task 3/`](Cybersec%20Task%203) |
+| # | Task | What it covers | Evidence |
+|---|------|----------------|----------|
+| 1 | [Local network port scan](CyberSec-Task1) | Discovery and service enumeration across a `/24`, SMB enumeration via NSE, then a re-scan after patching | Raw `nmap` output, packet capture, interview Q&A |
+| 2 | [Phishing email analysis](Cybersec%20Task%202) | Header inspection, sender and link analysis, social-engineering indicators, and a summary of the phishing traits found | Written report with annotated screenshots |
+| 3 | [Vulnerability scan](Cybersec%20Task%203) | OpenVAS/GVM scan of a local host, CVSS severity assessment, and documented remediation steps | Written report |
 
-Each task folder contains the task brief, methodology, tools used, screenshots / evidence, and a written report with findings.
+## Environment and tools
 
-## Tools used across the three tasks
+All work ran on **Kali Linux** against a self-owned lab network (`192.168.80.0/24`).
 
-`nmap` - `nikto` - `gobuster` - `Burp Suite` - `OWASP ZAP` - `Nessus` - `Lynis` - `Wireshark`
+`nmap 7.94` · `OpenVAS (GVM)` · `Lynis 3.0.9` · `Wireshark`
 
-## What I learned
+## What I took from it
 
-The internship reinforced that cybersecurity work is **80% structured discovery, 20% exploitation**. A good methodology beats a flashy tool every time. The hardening task in particular was a useful counter to my own habit of focusing on offensive techniques - defenders have a vastly harder job and write much better reports.
+Structured discovery does most of the work. The port scan only became useful once I
+re-scanned after patching and could show the delta — a finding without a before-and-after
+is just a screenshot.
+
+The phishing task was the odd one out and the most useful. Reading headers by hand taught
+me more about how mail actually moves than any tool would have, and it is the task closest
+to what an analyst does on a real shift.
 
 ---
 

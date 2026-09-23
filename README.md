@@ -28,4 +28,4 @@ The internship reinforced that cybersecurity work is **80% structured discovery,
 
 ---
 
-Part of my broader cybersecurity learning track (CEH v12, [BIA Master-Diploma](https://github.com/gururajseethur/SentinelMesh_Zero-Trust-CTI-Gateway), [TryHackMe](https://github.com/gururajseethur/Tryhackme-Gururajseethur)).
+Part of my broader cybersecurity learning track — CEH, the BIA Master-Diploma in Cyber Security & Ethical Hacking, and [TryHackMe](https://tryhackme.com/p/Gururajseethur).
